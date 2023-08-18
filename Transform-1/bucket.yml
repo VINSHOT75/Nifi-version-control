@@ -1,0 +1,6 @@
+flows:
+  4d3e2cc1-888f-4ae2-95dc-c449f2afd414: {ver: 3, file: transform_from_a_to_b.snapshot,
+    comments: Added put file processor, author: anonymous, created: 1692391762446,
+    flowName: transform from a to b, flowDesc: ''}
+layoutVer: 1
+bucketId: fc6bb2d9-76b1-4ee2-aa6b-309247023c5a
