@@ -110,6 +110,87 @@
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
           "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-scripting-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "b639af7d-2aef-3aa9-a8e7-5cf68f141d2b",
+          "identifier" : "7929b323-0a43-3cff-8363-0ac859313eec",
+          "instanceIdentifier" : "0a9146e3-018a-1000-c9b9-c26b6317d95b",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "ScriptedTransformRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 968.0,
+            "y" : 160.0
+          },
+          "properties" : {
+            "Script Engine" : "Groovy"
+          },
+          "propertyDescriptors" : {
+            "Script File" : {
+              "displayName" : "Script File",
+              "identifiesControllerService" : false,
+              "name" : "Script File",
+              "resourceDefinition" : {
+                "cardinality" : "SINGLE",
+                "resourceTypes" : [ "FILE" ]
+              },
+              "sensitive" : false
+            },
+            "Script Engine" : {
+              "displayName" : "Script Language",
+              "identifiesControllerService" : false,
+              "name" : "Script Engine",
+              "sensitive" : false
+            },
+            "Script Body" : {
+              "displayName" : "Script Body",
+              "identifiesControllerService" : false,
+              "name" : "Script Body",
+              "sensitive" : false
+            },
+            "Record Writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "Record Writer",
+              "sensitive" : false
+            },
+            "Record Reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "Record Reader",
+              "sensitive" : false
+            },
+            "Module Directory" : {
+              "displayName" : "Module Directory",
+              "identifiesControllerService" : false,
+              "name" : "Module Directory",
+              "resourceDefinition" : {
+                "cardinality" : "MULTIPLE",
+                "resourceTypes" : [ "FILE", "DIRECTORY" ]
+              },
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.script.ScriptedTransformRecord",
+          "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
         "variables" : { }

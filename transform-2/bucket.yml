@@ -1,6 +1,6 @@
 flows:
-  ebc60797-11e3-4890-a55a-5a671a1d95a8: {ver: 2, file: transform_from_x_to_y.snapshot,
-    comments: added generate flow file, author: anonymous, created: 1692394210117,
-    flowName: transform from x to y, flowDesc: ''}
+  ebc60797-11e3-4890-a55a-5a671a1d95a8: {ver: 3, file: transform_from_x_to_y.snapshot,
+    comments: added transformation, author: anonymous, created: 1692394425041, flowName: transform
+      from x to y, flowDesc: ''}
 layoutVer: 1
 bucketId: 9b680023-8c50-4cc4-b32e-51c471ced336
