@@ -16,39 +16,6 @@
           "destination" : {
             "comments" : "",
             "groupId" : "06eda695-ce1c-3319-a4ca-3d73805d9559",
-            "id" : "fca922b1-857d-3ea8-9b26-0fbf93464a53",
-            "instanceIdentifier" : "0a687c43-018a-1000-2b0c-49c3eb85b2a7",
-            "name" : "PutFile",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "06eda695-ce1c-3319-a4ca-3d73805d9559",
-          "identifier" : "878217ec-6293-3136-a3d6-e5cf91c7a55e",
-          "instanceIdentifier" : "0a68a2f7-018a-1000-10b1-354e501ed1eb",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure", "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "06eda695-ce1c-3319-a4ca-3d73805d9559",
-            "id" : "2482de93-e229-338f-9d0e-77361f6a8336",
-            "instanceIdentifier" : "0a5f6c2a-018a-1000-1ff4-143b84c6694d",
-            "name" : "JoltTransformJSON",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "06eda695-ce1c-3319-a4ca-3d73805d9559",
             "id" : "2482de93-e229-338f-9d0e-77361f6a8336",
             "instanceIdentifier" : "0a5f6c2a-018a-1000-1ff4-143b84c6694d",
             "name" : "JoltTransformJSON",
@@ -71,6 +38,75 @@
             "id" : "c9715f29-aebc-33d5-85d6-f6269418e645",
             "instanceIdentifier" : "0a5f56ec-018a-1000-bec4-691a59f8a499",
             "name" : "GenerateFlowFile",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "06eda695-ce1c-3319-a4ca-3d73805d9559",
+            "id" : "fca922b1-857d-3ea8-9b26-0fbf93464a53",
+            "instanceIdentifier" : "0a687c43-018a-1000-2b0c-49c3eb85b2a7",
+            "name" : "PutFile",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "06eda695-ce1c-3319-a4ca-3d73805d9559",
+          "identifier" : "dcdab2e9-b8ee-3d4a-82b2-fbbc65e5e589",
+          "instanceIdentifier" : "0a87e0eb-018a-1000-ca39-f5f9b64ee85a",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "06eda695-ce1c-3319-a4ca-3d73805d9559",
+            "id" : "2482de93-e229-338f-9d0e-77361f6a8336",
+            "instanceIdentifier" : "0a5f6c2a-018a-1000-1ff4-143b84c6694d",
+            "name" : "JoltTransformJSON",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 1400.0,
+            "y" : 217.0
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "06eda695-ce1c-3319-a4ca-3d73805d9559",
+            "id" : "fca922b1-857d-3ea8-9b26-0fbf93464a53",
+            "instanceIdentifier" : "0a687c43-018a-1000-2b0c-49c3eb85b2a7",
+            "name" : "PutFile",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "06eda695-ce1c-3319-a4ca-3d73805d9559",
+          "identifier" : "3908eb0d-30b0-3912-b727-339da9bd9bcc",
+          "instanceIdentifier" : "0a87f932-018a-1000-c93d-7168b2dab045",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "06eda695-ce1c-3319-a4ca-3d73805d9559",
+            "id" : "2482de93-e229-338f-9d0e-77361f6a8336",
+            "instanceIdentifier" : "0a5f6c2a-018a-1000-1ff4-143b84c6694d",
+            "name" : "JoltTransformJSON",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
